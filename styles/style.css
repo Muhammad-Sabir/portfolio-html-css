@@ -1,0 +1,247 @@
+:root {
+	--dark-blue: #1f2937ea;
+	--dark-blue-transparent: #243a58bb;
+	--white: #f9faf8;
+	--red: #c1121f;
+	--light-grey: #e5e7eb;
+}
+
+/*------------------------------------------------------------------CSS Reseting--------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Roboto", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/*---------------------------------------------------------------------HEADER-----------------------------------------------------------------*/
+header {
+	color: var(--white);
+	background-color: var(--dark-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*-----Nav-----*/
+
+nav {
+	display: flex;
+	padding: 16px;
+	justify-content: space-evenly;
+	width: 100%;
+	border-bottom: 1px dotted var(--white);
+	flex-wrap: wrap;
+}
+
+nav > ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 36px;
+	align-items: center;
+	margin: 8px 0px;
+}
+
+nav > ul > li {
+	flex: 1 0 auto;
+}
+
+nav > ul > li a {
+	font-size: 24px;
+	padding: 8px 16px;
+	background-color: var(--white);
+	border-radius: 2px;
+	text-decoration: none;
+	color: var(--dark-blue);
+}
+
+/*-----Author-Intro Section-----*/
+.author-intro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 62px;
+	padding: 32px;
+}
+
+.author-intro > div {
+	flex: 0 1 600px;
+}
+
+.author-intro > div > h1 {
+	font-size: 50px;
+}
+
+.author-intro > div > p {
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+.author-intro > div > a {
+	font-size: 18px;
+	padding: 8px 14px;
+	background-color: var(--red);
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--white);
+	font-weight: 700;
+}
+
+.author-intro > img {
+	height: 240px;
+	width: auto;
+	border-radius: 8px;
+}
+
+/*---------------------------------------------------------------------MAIN-------------------------------------------------------------------*/
+
+/*-----Fvrt-Games Section-----*/
+.fvrt-games {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fvrt-games > h2 {
+	font-size: 45px;
+	padding: 40px 0px;
+}
+
+.fvrt-games > .all-games {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	gap: 36px;
+	flex-wrap: wrap;
+}
+
+.fvrt-games > .all-games > .game-info {
+	flex: 0 1 266.66666px;
+	color: var(--white);
+	background-color: var(--dark-blue-transparent);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.fvrt-games > .all-games > .game-info > img {
+	height: 150px;
+	width: auto;
+}
+
+.fvrt-games > .all-games > .game-info > p {
+	padding: 16px;
+}
+
+.fvrt-games > .all-games > .game-info > p > strong {
+	display: block;
+}
+
+/*-----Quotation Section-----*/
+
+.quotation {
+	background-color: var(--light-grey);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 100px 500px;
+}
+
+.quotation > p:nth-of-type(1) {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.quotation > p:nth-of-type(2) {
+	font-size: 18px;
+	align-self: flex-end;
+	margin-right: 45px;
+}
+
+/*-----Prompt Section-----*/
+.prompt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 60px 350px;
+}
+
+.prompt > div {
+	background-color: var(--red);
+	padding: 20px 60px;
+	border-radius: 4px;
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.prompt > div > a {
+	font-size: 12px;
+	font-weight: 700;
+	padding: 8px 16px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: var(--white);
+	border: 1px solid var(--white);
+}
+
+/*--------------------------------------------------------------------FOOTER------------------------------------------------------------------*/
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--dark-blue);
+	padding: 24px;
+	color: var(--white);
+	font-weight: 700;
+}
